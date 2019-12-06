@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Project Design
+    Project Ehgan Design
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -126,6 +126,7 @@
     </div>
     <!-- </div>    -->
     <!-- End of page header -->
+    
 
         <div style="background-color: #daf8e3;" class="section section-about-us">
       <div class="container">
@@ -354,9 +355,16 @@
   <!-- textillate section -->
   <script>
     $(function () {
-      $('.title').textillate();
+      $('.title').textillate({
+        loop:true,
+        out:{
+          effect:'rollOut',
+          sync: false
+        }
+      });
     })
   </script>
+
   <!-- Keypress section for direct page -->
   <script>  
   function scrollToServices() {
