@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Project of Reagan
+    Project Design
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -18,8 +18,7 @@
   <link rel="stylesheet" type="text/css" href="examples/style.css">  
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/css/now-ui-kit.css?v=1.3.0" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="./assets/demo/demo.css" rel="stylesheet" />
+  
 </head>
 <body  class="landing-page sidebar-collapse">
   <!-- Navbar -->
@@ -90,22 +89,27 @@
       </div>
     </div>
   </nav>
-  <!-- End Navbar -->  
-    <div class="page-header page-header-small">
+  <!-- End Navbar --> 
+
+  <!-- Start of page header -->
+     <!-- <div id="particles-js"> -->
+   <div class="page-header page-header-small" id="page-header" id="particles-js">
 
       <div class="page-header-image" data-parallax="true">
       </div>
 
 <!-- particles.js container -->
-<div id="particles-js"></div>
+
+  <div id="particles-js"></div>
+
 
       <div class="content-center">
         <div class="container">
           
-          <h1 id="title">if you want to know "ABOUT US" press "a".</h1>
-          <h1 id="title">else if "you want our services" press "s"</h1>
-          <h1 id="title">else if "you may contact us" press "c"</h1>
-          <h1 id="title">else "scroll down" to explore MY site</h1>
+          <h1 id="title" tabindex="0">For About us click me then press "a".</h1>
+          <h1 id="title" tabindex="0">else if "you want our services" press "s"</h1>
+          <h1 id="title" tabindex="0">else if "you may contact us" press "c"</h1>
+          <h1 id="title" tabindex="0">else "scroll down" to explore MY site</h1>
           <div class="text-center">
             <a href="#pablo" class="btn btn-primary btn-icon btn-round">
               <i class="fab fa-facebook-square"></i>
@@ -118,8 +122,11 @@
             </a>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
+    <!-- </div>    -->
+    <!-- End of page header -->
+
         <div style="background-color: #daf8e3;" class="section section-about-us">
       <div class="container">
         <div class="row">
@@ -196,11 +203,11 @@
             <div class="col-md-4">
               <div class="team-player">
                 <img src="assets/img/webApp.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">                
-                <h4 class="title-mid">Web App</h4>
+                <!-- <h4 class="title-mid">Web App</h4> -->
 
                 <!-- Button modal trigger-->
                   <button onclick="showModal(0);" type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-                    Launch static backdrop modal
+                    Webb App
                   </button>
 
                 <!-- <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
@@ -211,10 +218,10 @@
             <div class="col-md-4">
               <div class="team-player">
                 <img src="assets/img/mobileApp.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
-                <h4 class="title-mid">Mobile App</h4>
+                <!-- <h4 class="title-mid">Mobile App</h4> -->
                 <!-- Button modal trigger-->
                   <button onclick="showModal(1);" type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-                    Launch static backdrop modal
+                    Mobile App
                   </button>                
                 <!-- <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
                   <a href="#">links</a> for people to be able to follow them outside the site.</p> -->                
@@ -224,10 +231,10 @@
             <div class="col-md-4">
               <div class="team-player">
                 <img src="assets/img/seo.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
-                <h4 class="title-mid">SEO</h4>
+                <!-- <h4 class="title-mid">SEO</h4> -->
                 <!-- Button modal trigger-->
                   <button onclick="showModal(2);" type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-                    Launch static backdrop modal
+                    SEO
                   </button> 
                   
                   <!-- <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
@@ -239,9 +246,9 @@
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">Details</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
+                          <!-- <span aria-hidden="true">&times;</span> -->                        
                         </button>
                       </div>
                       <div class="modal-body">
@@ -317,7 +324,7 @@
             document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
           </script>, Designed by
           <a href="#" target="_blank">Ehgan</a>. Coded by
-          <a href="#" target="_blank">REAGAN REYES</a>.
+          <a href="#" target="_blank">M.R.</a>.
         </div>
       </div>
     </footer>
@@ -357,26 +364,26 @@
       if ($('.Services').length != 0) {
         $("html, body").animate({
           scrollTop: $('.Services').offset().top - $('nav').height()
-        }, 1000);
+        }, 2000);
       }
     }
 
 
-  window.addEventListener("keydown",function(event){
+  document.querySelector('.content-center').addEventListener("keydown",function(event){
     if(event.keyCode == 65){
-      alert("Page is under construction");
+      alert("Page is under construction - Letter A");
     }
   });
 
-  window.addEventListener("keydown",function(event){
+  document.querySelector('.content-center').addEventListener("keydown",function(event){
     if(event.keyCode == 83){
-      alert("also Page is under construction");
+      alert("Page is under construction - Letter S");
     }
   });
 
-  window.addEventListener("keydown",function(event){
+  document.querySelector('.content-center').addEventListener("keydown",function(event){
     if(event.keyCode == 67){
-      alert("also Page is under construction");
+      alert("Page is under construction - Letter C");
     }
   });
 
@@ -393,6 +400,9 @@
   }
 
   </script>
+
+
+
 
 </body>
 
